@@ -1,0 +1,114 @@
+@import "@diligentcorp/atlas-react-bundle/styles";
+@import "@diligentcorp/atlas-react-bundle/global-nav.css";
+
+/* Attribute parts */
+.attr-label {
+  font-weight: 600;
+}
+
+.attr-required {
+  color: var(--danger-500, #c00);
+  margin-left: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.attr-desc {
+  color: #4b5563;
+  font-size: 13px;
+}
+
+.attr-desc.clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.link-like {
+  background: none;
+  border: none;
+  color: #2563eb;
+  cursor: pointer;
+  padding: 0;
+}
+
+.chips {
+  display: inline-flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  background: #f3f4f6;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.attachments {
+  margin: 6px 0 0 0;
+  padding-left: 18px;
+}
+
+.attr-empty {
+  color: #9ca3af;
+}
+
+.attr-long {
+  white-space: pre-wrap;
+}
+
+/* Attribute renderer */
+.attr {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.attr-meta {
+  color: #6b7280;
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.attr-error {
+  color: #b91c1c;
+  margin-top: 4px;
+}
+
+.attr-desc-tooltip .info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  color: #374151;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+/* Schema viewer */
+.schema-header {
+  margin-bottom: 16px;
+}
+
+.schema-desc {
+  color: #4b5563;
+}
+
+.schema-body {
+  display: grid;
+  gap: 12px;
+}
